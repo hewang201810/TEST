@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="2"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/ed_modify"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="2"
+            android:visibility="gone"
+            android:text="TextView" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ck_finish"
+            android:layout_marginRight="18dp"
+            android:text="2018年10月26日 17:36" />
+
+        <CheckBox
+            android:id="@+id/ck_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_modify"
+            android:layout_alignBottom="@+id/tv_modify"
+            android:layout_toLeftOf="@+id/tv_modify"
+            android:layout_marginRight="18dp"
+            android:text="标记" />
+
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:layout_marginRight="18dp"
+            android:text="修改"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#FF0000"
+            android:layout_marginRight="20dp"
+            android:text="删除" />
+    </RelativeLayout>
+
+</RelativeLayout>
