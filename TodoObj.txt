@@ -1,0 +1,41 @@
+package com.example.todolist;
+
+public class TodoObj {
+
+    private String todoThing;
+
+    private long time;
+
+    private boolean isFinish;
+
+    public TodoObj(String todoThing){
+        this.todoThing = todoThing;
+        time = System.currentTimeMillis();
+        isFinish = false;
+    }
+
+    public String getTodoThing() {
+        return todoThing;
+
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public boolean isFinish() {
+        return isFinish;
+    }
+
+    public void setTodoThing(String todoThing) {
+        this.todoThing = todoThing;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    public void setFinish(boolean finish) {
+        isFinish = finish;
+    }
+}
